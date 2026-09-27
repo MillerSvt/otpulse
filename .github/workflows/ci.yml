@@ -14,5 +14,5 @@ jobs:
           distribution: temurin
           java-version: '21'
           cache: gradle
-      - uses: android-actions/setup-android@v3
+      - uses: android-actions/setup-android@v4
       - run: ./gradlew :composeApp:allTests :composeApp:assembleDebug
