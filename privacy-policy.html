@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Политика конфиденциальности OTPulse / OTPulse Privacy Policy">
+  <title>OTPulse — Политика конфиденциальности / Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f9fc;
+      --surface: #ffffff;
+      --text: #172033;
+      --muted: #5e687a;
+      --accent: #2563eb;
+      --border: #dce3ef;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #08111f;
+        --surface: #101c2f;
+        --text: #edf4ff;
+        --muted: #aebbd0;
+        --accent: #64a5ff;
+        --border: #263752;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: clamp(24px, 5vw, 56px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 18px 50px rgb(0 0 0 / 10%);
+    }
+    h1, h2 { line-height: 1.25; }
+    h1 { margin-top: 0; font-size: clamp(2rem, 6vw, 3.25rem); }
+    h2 { margin-top: 2rem; }
+    a { color: var(--accent); }
+    .meta, .note { color: var(--muted); }
+    .language-nav {
+      display: inline-flex;
+      gap: 4px;
+      margin: 1.5rem 0 2rem;
+      padding: 4px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--bg);
+    }
+    .language-nav button {
+      border: 0;
+      border-radius: 999px;
+      padding: 8px 14px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    .language-nav button[aria-pressed="true"] {
+      background: var(--accent);
+      color: #ffffff;
+    }
+    .language-nav button:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--accent) 35%, transparent);
+      outline-offset: 2px;
+    }
+    footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>OTPulse</h1>
+    <p class="meta" id="page-subtitle">Privacy Policy</p>
+    <nav class="language-nav" aria-label="Language">
+      <button type="button" data-language="ru" aria-pressed="false">Русский</button>
+      <button type="button" data-language="en" aria-pressed="false" lang="en">English</button>
+    </nav>
+  </header>
+
+  <article id="ru" class="localized-content" lang="ru" hidden>
+    <h2>Политика конфиденциальности</h2>
+    <p class="meta"><strong>Последнее обновление:</strong> 27 сентября 2026 года</p>
+
+    <p>OTPulse — офлайн-аутентификатор. Приложение хранит данные аккаунтов аутентификатора на устройстве и защищает секретные ключи TOTP с помощью безопасного хранилища Android. OTPulse не предоставляет систему аккаунтов, не содержит рекламы и не отправляет секретные ключи или сгенерированные одноразовые коды на серверы OTPulse.</p>
+
+    <h2>Какие данные обрабатывает приложение</h2>
+    <p>Названия сервисов и аккаунтов, параметры TOTP, секретные ключи и сгенерированные коды обрабатываются локально на устройстве. Секретные ключи защищаются средствами Android Keystore. Приватные данные приложения исключены из облачного резервного копирования и переноса между устройствами средствами Android.</p>
+
+    <h2>Сканирование QR-кодов</h2>
+    <p>На Android OTPulse использует Google Code Scanner, предоставляемый сервисами Google Play. Обработка изображения выполняется на устройстве, а OTPulse получает результат сканирования. OTPulse не сохраняет кадры камеры.</p>
+    <p>Согласно документации Google для ML Kit, используемый SDK может собирать ограниченные сведения об устройстве и приложении, идентификаторы установки, показатели производительности, конфигурацию API, сведения о событиях функций и коды ошибок для диагностики и аналитики использования. Google указывает, что эти данные шифруются при передаче и не передаются третьим лицам. Автоматическое масштабирование сканера в OTPulse отключено.</p>
+    <p>Подробнее: <a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="external">требования Google к раскрытию данных ML Kit</a>.</p>
+
+    <h2>Bluetooth</h2>
+    <p>На поддерживаемых устройствах Android OTPulse может работать как Bluetooth HID-клавиатура. Одноразовый код отправляется только после того, как пользователь выбрал сопряжённый компьютер и явно запустил отправку. Для этого Android запрашивает разрешение «Устройства поблизости». Идентификаторы Bluetooth-устройств не отправляются на серверы OTPulse.</p>
+
+    <h2>Резервные копии и буфер обмена</h2>
+    <p>Экспорт и импорт резервной копии выполняется только по инициативе пользователя через системный интерфейс выбора документов. Экспортированный файл содержит секретные ключи в открытом виде; пользователь отвечает за его безопасное хранение.</p>
+    <p>При копировании одноразового кода он помещается в системный буфер обмена. Другие приложения или системные службы могут получать доступ к буферу обмена в соответствии с правилами Android.</p>
+
+    <h2>Хранение и удаление</h2>
+    <p>Данные аутентификатора остаются на устройстве, пока пользователь не удалит отдельный аккаунт, не очистит данные приложения или не удалит OTPulse. У OTPulse нет серверного аккаунта или серверного хранилища пользовательских данных, поэтому отдельный запрос разработчику на удаление данных не требуется.</p>
+
+    <h2>Изменения политики</h2>
+    <p>Эта политика может обновляться при изменении функций приложения, используемых SDK или требований законодательства. Актуальная версия всегда публикуется на этой странице с датой последнего обновления.</p>
+
+    <h2>Контакты</h2>
+    <p>Разработчик: OTPulse<br>
+      Электронная почта для вопросов о конфиденциальности и поддержке:
+      <a href="mailto:otpulse@zaytsev.tech">otpulse@zaytsev.tech</a>
+    </p>
+  </article>
+
+  <article id="en" class="localized-content" lang="en">
+    <h2>Privacy Policy</h2>
+    <p class="meta"><strong>Last updated:</strong> September 27, 2026</p>
+
+    <p>OTPulse is an offline-first authenticator. The app stores authenticator account data on the device and protects TOTP secret keys using Android secure storage. OTPulse does not provide an account system, contains no advertising, and does not send secret keys or generated one-time codes to OTPulse servers.</p>
+
+    <h2>Data processed by the app</h2>
+    <p>Service and account labels, TOTP parameters, secret keys, and generated codes are processed locally on the device. Secret keys are protected using Android Keystore. The app's private data is excluded from Android cloud backup and device-to-device transfer.</p>
+
+    <h2>QR code scanning</h2>
+    <p>On Android, OTPulse uses Google Code Scanner, provided by Google Play services. Image processing occurs on the device, and OTPulse receives the scan result. OTPulse does not retain camera frames.</p>
+    <p>According to Google's ML Kit documentation, the SDK may collect limited device and application information, per-installation identifiers, performance metrics, API configuration, feature event information, and error codes for diagnostics and usage analytics. Google states that this data is encrypted in transit and is not shared with third parties. Scanner auto-zoom is disabled in OTPulse.</p>
+    <p>Learn more in <a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="external">Google's ML Kit data disclosure guidance</a>.</p>
+
+    <h2>Bluetooth</h2>
+    <p>On supported Android devices, OTPulse can act as a Bluetooth HID keyboard. A one-time code is sent only after the user selects a paired computer and explicitly starts sending. Android requests the Nearby devices permission for this feature. Bluetooth device identifiers are not transmitted to OTPulse servers.</p>
+
+    <h2>Backups and clipboard</h2>
+    <p>Backup export and import are initiated by the user through the system document picker. Exported files contain authenticator secret keys in plain text, and the user is responsible for storing them securely.</p>
+    <p>When a one-time code is copied, it is placed in the system clipboard. Other apps or system services may access clipboard contents according to Android rules.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Authenticator data remains on the device until the user deletes an individual account, clears the app's data, or uninstalls OTPulse. OTPulse has no server-side account or user-data storage, so no separate deletion request to the developer is necessary.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>This policy may be updated when app functionality, included SDKs, or legal requirements change. The current version is always published on this page with its last-updated date.</p>
+
+    <h2>Contact</h2>
+    <p>Developer: OTPulse<br>
+      Privacy and support email:
+      <a href="mailto:otpulse@zaytsev.tech">otpulse@zaytsev.tech</a>
+    </p>
+  </article>
+
+  <footer>© 2026 OTPulse</footer>
+</main>
+<script>
+  (() => {
+    const supportedLanguages = new Set(["ru", "en"]);
+    let storedLanguage = null;
+    try {
+      storedLanguage = localStorage.getItem("otpulse-policy-language");
+    } catch (_) {
+      // Storage may be unavailable in privacy-restricted browser contexts.
+    }
+    const browserLanguage = (navigator.language || "en").toLowerCase().split("-")[0];
+    const initialLanguage = supportedLanguages.has(storedLanguage)
+      ? storedLanguage
+      : supportedLanguages.has(browserLanguage) ? browserLanguage : "en";
+
+    const translations = {
+      ru: {
+        subtitle: "Политика конфиденциальности",
+        title: "OTPulse — Политика конфиденциальности",
+        description: "Политика конфиденциальности OTPulse"
+      },
+      en: {
+        subtitle: "Privacy Policy",
+        title: "OTPulse — Privacy Policy",
+        description: "OTPulse Privacy Policy"
+      }
+    };
+
+    const description = document.querySelector('meta[name="description"]');
+    const subtitle = document.getElementById("page-subtitle");
+    const articles = document.querySelectorAll(".localized-content");
+    const buttons = document.querySelectorAll("[data-language]");
+
+    function selectLanguage(language, remember) {
+      const selected = supportedLanguages.has(language) ? language : "en";
+      document.documentElement.lang = selected;
+      document.title = translations[selected].title;
+      description.content = translations[selected].description;
+      subtitle.textContent = translations[selected].subtitle;
+
+      articles.forEach((article) => {
+        article.hidden = article.lang !== selected;
+      });
+      buttons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.language === selected));
+      });
+
+      if (remember) {
+        try {
+          localStorage.setItem("otpulse-policy-language", selected);
+        } catch (_) {
+          // The switch still works for the current page when storage is unavailable.
+        }
+      }
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => selectLanguage(button.dataset.language, true));
+    });
+
+    selectLanguage(initialLanguage, false);
+  })();
+</script>
+</body>
+</html>
