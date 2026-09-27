@@ -1,0 +1,30 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 77;
+	objects = {
+		200000000000000000000001 = {isa = PBXBuildFile; fileRef = 200000000000000000000011; };
+		200000000000000000000002 = {isa = PBXBuildFile; fileRef = 200000000000000000000012; };
+		200000000000000000000011 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		200000000000000000000012 = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = SkikoCompatibility.s; sourceTree = "<group>"; };
+		200000000000000000000013 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200000000000000000000014 = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OTPulseApp.entitlements; sourceTree = "<group>"; };
+		200000000000000000000015 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		200000000000000000000020 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		200000000000000000000021 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (200000000000000000000001, 200000000000000000000002); runOnlyForDeploymentPostprocessing = 0; };
+		200000000000000000000022 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		200000000000000000000030 = {isa = PBXGroup; children = (200000000000000000000031, 200000000000000000000032); sourceTree = "<group>"; };
+		200000000000000000000031 = {isa = PBXGroup; path = OTPulseApp; sourceTree = "<group>"; children = (200000000000000000000011, 200000000000000000000012, 200000000000000000000013, 200000000000000000000014); };
+		200000000000000000000032 = {isa = PBXGroup; name = Products; children = (200000000000000000000015); sourceTree = "<group>"; };
+		200000000000000000000040 = {isa = PBXNativeTarget; buildConfigurationList = 200000000000000000000051; buildPhases = (200000000000000000000021, 200000000000000000000020, 200000000000000000000022); buildRules = (); dependencies = (); name = OTPulse; productName = OTPulse; productReference = 200000000000000000000015; productType = "com.apple.product-type.application"; };
+		200000000000000000000041 = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 2600; LastUpgradeCheck = 2600; TargetAttributes = {200000000000000000000040 = {CreatedOnToolsVersion = 26.0; }; }; }; buildConfigurationList = 200000000000000000000050; compatibilityVersion = "Xcode 16.0"; developmentRegion = ru; hasScannedForEncodings = 0; knownRegions = (ru, en, Base); mainGroup = 200000000000000000000030; productRefGroup = 200000000000000000000032; projectDirPath = ""; projectRoot = ""; targets = (200000000000000000000040); };
+		200000000000000000000060 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.2; SDKROOT = iphoneos; }; name = Debug; };
+		200000000000000000000061 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.2; SDKROOT = iphoneos; }; name = Release; };
+		200000000000000000000062 = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = ""; CODE_SIGN_ENTITLEMENTS = OTPulseApp/OTPulseApp.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 5; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = OTPulseApp/Info.plist; MARKETING_VERSION = 0.3.0; PRODUCT_BUNDLE_IDENTIFIER = com.otpulse.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1"; }; name = Debug; };
+		200000000000000000000063 = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = ""; CODE_SIGN_ENTITLEMENTS = OTPulseApp/OTPulseApp.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 5; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = OTPulseApp/Info.plist; MARKETING_VERSION = 0.3.0; PRODUCT_BUNDLE_IDENTIFIER = com.otpulse.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1"; }; name = Release; };
+		200000000000000000000050 = {isa = XCConfigurationList; buildConfigurations = (200000000000000000000060, 200000000000000000000061); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		200000000000000000000051 = {isa = XCConfigurationList; buildConfigurations = (200000000000000000000062, 200000000000000000000063); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+	};
+	rootObject = 200000000000000000000041;
+}

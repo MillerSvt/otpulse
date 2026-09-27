@@ -1,0 +1,11 @@
+.gradle/
+.kotlin/
+build/
+**/build/
+local.properties
+*.jks
+*.keystore
+keystore.properties
+.idea/
+*.xcuserstate
+DerivedData/
